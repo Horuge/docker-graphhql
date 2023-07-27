@@ -26,9 +26,11 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t jsolis77/docker-graphql:0.0.2 .
+        docker build -t jsolis77/docker-graphql:latest .
     - name: Push docker image
       run: |
-        docker push jsolis77/docker-graphql:0.0.2 .
+        docker push jsolis77/docker-graphql:0.0.2
+        docker push jsolis77/docker-graphql:latest
         
     
 #     - name: Build the Docker image
